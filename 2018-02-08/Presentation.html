@@ -1,287 +1,113 @@
-/**
- * White theme for reveal.js. This is the opposite of the 'black' theme.
- *
- * By Hakim El Hattab, http://hakim.se
- */
-@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
-section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
-  color: #fff; }
+<!doctype html>
+<html lang="en">
 
-/*********************************************
- * GLOBAL STYLES
- *********************************************/
-body {
-  background: #fff;
-  background-color: #fff; }
+	<head>
+		<meta charset="utf-8">
 
-.reveal {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 38px;
-  font-weight: normal;
-  color: #222; }
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-::selection {
-  color: #fff;
-  background: #98bdef;
-  text-shadow: none; }
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-.reveal .slides > section,
-.reveal .slides > section > section {
-  line-height: 1.3;
-  font-weight: inherit; }
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+	</head>
 
-/*********************************************
- * HEADERS
- *********************************************/
-.reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4,
-.reveal h5,
-.reveal h6 {
-  margin: 0 0 20px 0;
-  color: #222;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: normal;
-  text-transform: uppercase;
-  text-shadow: none;
-  word-wrap: break-word; }
+	<body>
 
-.reveal h1 {
-  font-size: 2.5em; }
+		<div class="reveal">
+			<div class="slides">
+				<section >
+					<h1>OpenFoss</h1>
+					<p><b>CS4260 Development Team for OpenMRS</b></p>
+				</section>
 
-.reveal h2 {
-  font-size: 1.6em; }
+				<section data-background="#d11242">
+					<h2>Who we are</h2>
+					<table>
+						<tr>
+							<td><div><img width="150" height="150" data-src="lib/img/gideon.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Gideon Nyamachere</p></div></td>
+							<td><div><img width="150" height="150" data-src="lib/img/jonathan.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Jonathan Grant</p></div></td>
+							<br/>
+						</tr>
+						<tr>
+							<td><div><img width="150" height="150" data-src="lib/img/said.png" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Said Robley</p></div></td>
+							<td><div><img width="150" height="150" data-src="lib/img/tell.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Tell Hause</p></div></td>
+						</tr>
+					</table>
+				</section>
 
-.reveal h3 {
-  font-size: 1.3em; }
+				<section data-background="#00447c">
+					<h2>Our Vision</h2>
+					<p>OpenFoss' vision is to practice software development methodologies adding value to OpenMRS, in order to synthesize our existing knowledge of software engineering.</p>
+				</section>
 
-.reveal h4 {
-  font-size: 1em; }
+				<section data-background="#d11242">
+					<h2>What Success Looks like for OpenFoss</h2>
+					<ul>
+							<li class="fragment">Actualizing our knowledge of Software Engineering</li>
+							<li class="fragment">Providing artifacts of accomplishments throughout the semester</li>
+							<li class="fragment">Work as a team and still like each other at the end of the semester</li>
+						</ul>
+				</section>
 
-.reveal h1 {
-  text-shadow: none; }
+				<section>
+					<h2>What is OpenMRS?</h2>
+					<img data-src="lib/img/openmrs.png" style="border-radius: 10%">
+					<ul>
+							<li class="fragment">An Open Source Medical Record Application.</li>
+							<li class="fragment">Mitigate preventable deaths from lack of information.</li>
+							<li class="fragment">Focused on serving developing countries.</li>
+						</ul>
+				</section>
 
-/*********************************************
- * OTHER
- *********************************************/
-.reveal p {
-  margin: 20px 0;
-  line-height: 1.3; }
+				<section>
+					<h2>Our Software Development Process</h2>
+					<b class="fragment">Agile Scrum</b>
+				</section>
 
-/* Ensure certain elements are never larger than the slide itself */
-.reveal img,
-.reveal video,
-.reveal iframe {
-  max-width: 95%;
-  max-height: 95%; }
+				<section data-background="#00447c">
+						<h2>Why?</h2>
+					</section>
 
-.reveal strong,
-.reveal b {
-  font-weight: bold; }
+				<section>
+					<h2>Our Build Environment</h2>
+					<br/>
+					<ul>
+						<li class="fragment">VirtualBox & Vagrant</li>
+						<li class="fragment">OpenMRS Stack</li>
+						<li class="fragment">Install Example</li>
+					</ul>
+				</section>
 
-.reveal em {
-  font-style: italic; }
+				<section data-background-video="https://s3-us-west-2.amazonaws.com/openfoss-stuff/OpenMRS.mp4" data-background-color="#000000">
+				</section>
 
-.reveal ol,
-.reveal dl,
-.reveal ul {
-  display: inline-block;
-  text-align: left;
-  margin: 0 0 0 1em; }
+				<section style="text-align: left;" data-background="#d11242">
+					<h1>The End</h1>
+					<h3>Questions?</h3>
+				</section>
+			</div>
+		</div>
 
-.reveal ol {
-  list-style-type: decimal; }
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
 
-.reveal ul {
-  list-style-type: disc; }
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				history: true,
+				keyboard: true,
+				progress: true,
+				center: true,
+				transition: 'fade',
+				dependencies: [
+					// https://github.com/eligrey/classList.js/
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } }
+				]
+			});
+		</script>
 
-.reveal ul ul {
-  list-style-type: square; }
-
-.reveal ul ul ul {
-  list-style-type: circle; }
-
-.reveal ul ul,
-.reveal ul ol,
-.reveal ol ol,
-.reveal ol ul {
-  display: block;
-  margin-left: 40px; }
-
-.reveal dt {
-  font-weight: bold; }
-
-.reveal dd {
-  margin-left: 40px; }
-
-.reveal q,
-.reveal blockquote {
-  quotes: none; }
-
-.reveal blockquote {
-  display: block;
-  position: relative;
-  width: 70%;
-  margin: 20px auto;
-  padding: 5px;
-  font-style: italic;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
-
-.reveal blockquote p:first-child,
-.reveal blockquote p:last-child {
-  display: inline-block; }
-
-.reveal q {
-  font-style: italic; }
-
-.reveal pre {
-  display: block;
-  position: relative;
-  width: 90%;
-  margin: 20px auto;
-  text-align: left;
-  font-size: 0.55em;
-  font-family: monospace;
-  line-height: 1.2em;
-  word-wrap: break-word;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
-
-.reveal code {
-  font-family: monospace; }
-
-.reveal pre code {
-  display: block;
-  padding: 5px;
-  overflow: auto;
-  max-height: 400px;
-  word-wrap: normal; }
-
-.reveal table {
-  margin: auto;
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-.reveal table th {
-  font-weight: bold; }
-
-.reveal table th,
-.reveal table td {
-  text-align: left;
-  padding: 0.2em 0.5em 0.2em 0.5em;
-  border-bottom: 1px solid; }
-
-.reveal table th[align="center"],
-.reveal table td[align="center"] {
-  text-align: center; }
-
-.reveal table th[align="right"],
-.reveal table td[align="right"] {
-  text-align: right; }
-
-.reveal table tbody tr:last-child th,
-.reveal table tbody tr:last-child td {
-  border-bottom: none; }
-
-.reveal sup {
-  vertical-align: super; }
-
-.reveal sub {
-  vertical-align: sub; }
-
-.reveal small {
-  display: inline-block;
-  font-size: 0.6em;
-  line-height: 1.2em;
-  vertical-align: top; }
-
-.reveal small * {
-  vertical-align: top; }
-
-/*********************************************
- * LINKS
- *********************************************/
-.reveal a {
-  color: #2a76dd;
-  text-decoration: none;
-  -webkit-transition: color .15s ease;
-  -moz-transition: color .15s ease;
-  transition: color .15s ease; }
-
-.reveal a:hover {
-  color: #6ca0e8;
-  text-shadow: none;
-  border: none; }
-
-.reveal .roll span:after {
-  color: #fff;
-  background: #1a53a1; }
-
-/*********************************************
- * IMAGES
- *********************************************/
-.reveal section img {
-  margin: 15px 0px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #222;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
-
-.reveal section img.plain {
-  border: 0;
-  box-shadow: none; }
-
-.reveal a img {
-  -webkit-transition: all .15s linear;
-  -moz-transition: all .15s linear;
-  transition: all .15s linear; }
-
-.reveal a:hover img {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: #2a76dd;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
-
-/*********************************************
- * NAVIGATION CONTROLS
- *********************************************/
-.reveal .controls .navigate-left,
-.reveal .controls .navigate-left.enabled {
-  border-right-color: #2a76dd; }
-
-.reveal .controls .navigate-right,
-.reveal .controls .navigate-right.enabled {
-  border-left-color: #2a76dd; }
-
-.reveal .controls .navigate-up,
-.reveal .controls .navigate-up.enabled {
-  border-bottom-color: #2a76dd; }
-
-.reveal .controls .navigate-down,
-.reveal .controls .navigate-down.enabled {
-  border-top-color: #2a76dd; }
-
-.reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #6ca0e8; }
-
-.reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #6ca0e8; }
-
-.reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #6ca0e8; }
-
-.reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #6ca0e8; }
-
-/*********************************************
- * PROGRESS BAR
- *********************************************/
-.reveal .progress {
-  background: rgba(0, 0, 0, 0.2); }
-
-.reveal .progress span {
-  background: #2a76dd;
-  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+	</body>
+</html>
