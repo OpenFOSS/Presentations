@@ -1,0 +1,31 @@
+==============================
+         Backgrounds
+==============================
+RoadRunner Red:
+data-background="#d11242"
+
+RoadRunner Blue:
+data-background="#00447c"
+
+Video Background:
+data-background-video="/local/or/remote/path/" data-background-color="#000000"
+
+Image Background
+data-background-image="lib/img/image.png"
+
+==============================
+            Images
+==============================
+Personal Profiles:
+<div><img width="150" height="150" data-src="lib/img/NAME" style="margin: 0; border-radius: 50%; display: block; margin-right: auto margin-left: auto"<br/><p style="text-align: center; margin: -1em 0 0 0;">NAME</p></div>
+
+In slide Images:
+<img data-src="lib/img/FILENAME" style="border-radius: 10%">
+
+
+==============================
+           Revealing
+==============================
+Adding this to any subsection of <section>:
+class="fragment"
+
