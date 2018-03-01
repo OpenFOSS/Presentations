@@ -68,6 +68,13 @@
 
         <section>
             <h2> Example Code </h2>
+            <pre><code data-trim data-noescape>
+              (def lazy-fib
+                  (concat
+                      [0 1]
+                      <mark>((fn rfib [a b]</mark>
+                          (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+                          </code></pre>
             <ul>
                 <li class="fragment">Like thisdf sdfk  fda.</li>
                 <li class="fragment">andLike thisdf sdfk fddf a aaddf afdfda fda..</li>
@@ -139,6 +146,19 @@
         </div>
         </section>
 
+        <section data-background-video="https://i.giphy.com/media/3oEduOnl5IHM5NRodO/giphy.mp4" data-background-video-loop data-background-color="#000000">
+          <div style="text-align: left; display: block;">
+            <br/> <br/> <br/> <br/> <br/> <br/>
+            <h2>Video<br/>Backgrounds</h2>
+          </div>
+          <div class="pict-name">
+
+            <img data-src="lib/img/tell.jpg">
+            <p>Tell Hause</p>
+      </div>
+        </section>
+
+
         <section>
           <h2>Main Point & Conclusion</h2>
           <ul>
@@ -150,6 +170,11 @@
             <li class="fragment">and Like thisdf sdfk fddf a aaddf afdfda fda..</li>
             <li class="fragment">Like thisdf sdfk fddf a aaddf afdfda fda.</li>   
         </ul>
+        <div class="pict-name">
+
+          <img data-src="lib/img/said.png">
+          <p>Tell Hause</p>
+    </div>
         </section>
       </div>
     </div>
