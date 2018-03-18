@@ -37,6 +37,16 @@
       ul .list-small {
         font-size: 27px;
       }
+        .row:after{
+            display: block;
+            clear: both;
+        }
+        .column{
+            float:left;
+            width: 50%;
+            padding: auto;
+            height: auto;
+        }
     </style>
   </head>
 
@@ -45,7 +55,7 @@
       <div class="slides">
         <section >
           <br><br><br><br>
-          <h1>ADDRESSING TEAM DYSFUNCTIONS</h1>
+          <h1>QUALITY MATTERS !!!</h1>
           <br>
           <p><b>By OpenFOSS</b></p>
         </section>
@@ -67,20 +77,26 @@
         </section>
 
         <section>
-            <h2>DO WE HAVE DYSFUNCTIONS?</h2>
+            <h2>HOW DID WE COME UP WITH QUALITY METRICS</h2>
             <ul>
-                <li class="fragment" style="transition-duration: 1.5s">Going through <i>The 5 Dysfunctions of a Team</i> book by Lencioni</li>
+                <li class="fragment" style="transition-duration: 1.5s">Reviewing the artifacts created:</li>
                 <ul>
-                  <li class="fragment" style="transition-duration: 1.5s">Inattention to results: Team not buying into decisions</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">OpenMRS</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Team work</li>
                 </ul>
                 <br>
-                <li class="fragment" style="transition-duration: 1.5s">How did we identify dysfunctions?</li>
+                <li class="fragment" style="transition-duration: 1.5s">Ensuring we made artifacts that are:</li>
                 <ul>
-                  <li class="fragment" style="transition-duration: 1.5s">Presentation Preparation Problems</li>
-                  <li class="fragment" style="transition-duration: 1.5s">Identified Imbalanced Output</li>
-                  <li class="fragment" style="transition-duration: 1.5s">A Fear of Failure</li>
-                  <li class="fragment" style="transition-duration: 1.5s">Placing Individual Goals Ahead of Team Goals</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Tangible</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Can stand-alone</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Stakeholder can <u>buy into</u></li>
                   </ul>
+                </br>
+                <li class="fragment" style="transition-duration: 1.5s">Which metrics do we use:</li>
+                <ul>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Functional Metrics</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Non-Functional Metrics</li>
+                </ul>
                 </li>
             </ul>
             <div class="pict-name">
@@ -90,122 +106,88 @@
         </section>
 
         <section data-background="#00447c">
-          <h2>HOW DID OUR TEAM ADDRESS THESE DYSFUNCTIONS?</h2>
+          <h2>HOW WE TURNED QUALITY INTO A COMPARABLE METRIC</h2>
           <ul>
-              <li class="fragment" style="transition-duration: 1.5s">Team Building:
-                <ul>
-                  <li class="fragment list-small" style="transition-duration: 1.5s">Focus on meaningful conversation</li>
-                  <li class="fragment list-small" style="transition-duration: 1.5s">Don't talk about work</li>
-                </ul>
-              </li>
-              <br>
-              <li class="fragment" style="transition-duration: 1.5s">Diagnostic Questionare:</li>
-                <ul>
-                  <li class="fragment" style="transition-duration: 1.5s">All 5 dysfunctions are interrelated</li>
-                  <ul>
-                    <li class="fragment list-small" style="transition-duration: 1.5s">Lack of Commitment</li>
-                    <li class="fragment list-small" style="transition-duration: 1.5s">Avoidance of Accountability</li>
-                    <li class="fragment list-small" style="transition-duration: 1.5s">Inattention to Results</li>
-                  </ul>
-                </ul>
-              </li>
-
+              <div class="row">
+                  <div class="column">
+                      <li class="fragment" style="transition-duration: 1.5s">Creating a flexible scale for the metrics
+                          <ul>
+                              <li class="fragment list-small" style="transition-duration: 1.5s">Scalar</li>
+                              <li class="fragment list-small" style="transition-duration: 1.5s">Binary</li>
+                          </ul>
+                      </li>
+                      <br>
+                      <li class="fragment" style="transition-duration: 1.5s">Easily Comparable Metrics</li>
+                      <ul>
+                          <li class="fragment list-small" style="transition-duration: 1.5s">Can compare apples to oranges</li>
+                          <li class="fragment list-small" style="transition-duration: 1.5s">Can perform analysis easily</li>
+                      </ul>
+                      </li>
+                  </div>
+                  <div class="column">
+                      <img data-src="lib/img/qualityQuestionnaire.png" style="float: right; border: 0px;" class="fragment">
+                  </div>
+              </div>
           </ul>
           <div class="pict-name">
-
               <img data-src="lib/img/tell.jpg">
               <p>Tell Hause</p>
           </div>
         </section>
 
         <section>
-          <h2>Questionare Result Example</h2>
-          <img data-src="lib/img/Questionare-Result.png" style="background: rgba(255, 255, 255, 0); border: 0px; box-shadow: 0 0 0;">
+            <h2>MAKING A QUALITY QUESTIONNAIRE</h2>
+            <ul>
+                <div class="row">
+                    <div class="column" style="width: 60%">
+                        <li class="fragment" style="transition-duration: 1.5s">We wanted the questionnaire to be automated</li>
+                        <li class="fragment" style="transition-duration: 1.5s">Needed to be general enough for many types of artifacts</li>
+                        <li class="fragment" style="transition-duration: 1.5s">We desired it to be easily distributable</li>
+                        <li class="fragment" style="transition-duration: 1.5s">We wanted the questionnaire to be easily adopted by stakeholders</li>
+                        </li>
+                    </div>
+                    <div class="column" style="width: 40%">
+                        <img data-src="lib/img/kiss.png" style="float: right; border: 0px;" class="fragment">
+                        <p style="font-size: 0.5em" class="fragment"> https://www.shutterstock.com/g/nationkp </p>
+                    </div>
+                </div>
+            </ul>
           <div class="pict-name">
-
               <img data-src="lib/img/tell.jpg">
               <p>Tell Hause</p>
-          </div>
-        </section>
-
-        <section data-transition="none">
-          <h2>Questionare Result Example</h2>
-          <img data-src="lib/img/Questionare-Result-1.png" style="background: rgba(255, 255, 255, 0); border: 0px; box-shadow: 0 0 0;">
-          <div class="pict-name">
-
-              <img data-src="lib/img/tell.jpg">
-              <p>Tell Hause</p>
-          </div>
-        </section>
- 
-        <section data-background="#d11242">
-          <h2>OPPORTUNITIES FOR IMPROVEMENT</h2>
-          <ul>
-            <li class="fragment" style="transition-duration: 1.5s">Pair Programming</li>
-            <ul>
-              <li class="fragment list-small" style="transition-duration: 1.5s">Getting members comfortable with the process</li>
-              <li class="fragment list-small" style="transition-duration: 1.5s">Coordinating Schedules</li>
-              <li class="fragment list-small" style="transition-duration: 1.5s">Identifying a common work unit</li>
-            </ul>
-            <br/>
-            <li class="fragment" style="transition-duration: 1.5s">Giving Critique; Taking criticism gracefully</li>
-            <ul>
-              <li class="fragment" style="transition-duration: 1.5s">Take responsibility for your deadlines.</li>
-              <li class="fragment" style="transition-duration: 1.5s">Kill ambiguity within your deadlines.</li>
-            </ul>
-          </ul>
-          <div class="pict-name">
-            <img data-src="lib/img/jonathan.jpg">
-            <p>Jonathan Grant</p>
           </div>
         </section>
 
         <section>
-          <h2>WHAT WORKED WELL</h2>
+          <h2>LESSONS LEARNT</h2>
           <ul>
-            <li class="fragment" style="transition-duration: 1.5s">No Agenda? No Meeting.</li>
+            <li class="fragment" style="transition-duration: 1.5s">Respect the time respondents take:</li>
               <ul>
-                <li class="fragment list-small" style="transition-duration: 1.5s"><b>Focus</b> on sticking to the agenda</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Tried it with assessing our second presentation</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Time to launch, fill in and return: approx. 5 mins</li>
               </ul>
               </li>
               <br>
-              <li class="fragment" style="transition-duration: 1.5s"> Keys to Our Success</li>
-                 <!-- Team members are passionate and willing to be vulnerable</li> -->
+              <li class="fragment" style="transition-duration: 1.5s"> Make the Task Repeatable:</li>
                 <ul>
-                  <li class="fragment list-small" style="transition-duration: 1.5s">Open communications.</li>
-                  <li class="fragment list-small" style="transition-duration: 1.5s">Honest feedbacks</li>
-                  <li class="fragment list-small" style="transition-duration: 1.5s">willing to admit mistakes and weaknesses</li>
-                  <li class="fragment list-small" style="transition-duration: 1.5s">Created a trusting team: <b>honesty</b></li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Use a template</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Automate it</li>
                 </ul>
               </li>
               <br>
-              <li class="fragment" style="transition-duration: 1.5s">Automated the Questionnaire with Google Docs</li>
-
+              <li class="fragment" style="transition-duration: 1.5s"> Keep It Simple Stupid:</li>
+              <ul>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Keep the questionnaire short</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Use only meaningful questions</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Make the output easy to aggregate</li>
+              </ul>
+              </li>
           </ul>
           <div class="pict-name">
 
               <img data-src="lib/img/said.png">
               <p>Said Robley</p>
           </div>
-        </section>
-
-        <section data-background-image="lib/img/Questionare.png">
-          <div class="pict-name">
-              <img data-src="lib/img/said.png" style="border-color: #888;">
-              <p style="color: #888;">Said Robley</p>
-          </div>
-        </section>
-
-        <section>
-          <h2>"Every team needs constant work, because without it, even the best ones deviate toward dysfunction"</h2>
-          <h4>~Lencioni</h4>
-          <ul>
-            <li class="fragment">Be cognizant of creeping dysfunctions.</li>
-            <li class="fragment">Make addressing dysfunction simple & automated.</li>
-            <li class="fragment">Seek knowledge from other's who have been there before.</li>
-            <li class="fragment">Know your weaknesses; address them regularly.</li>
-            <li class="fragment">tinyurl.com/OpenFOSSDysfunction</li>
-          </ul>
         </section>
       </div>
     </div>
