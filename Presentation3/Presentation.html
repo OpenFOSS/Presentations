@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <style>
+      section {
+        height: 655px;
+        position: relative;
+      }
+      section .pict-name img {
+        border-radius: 50%; 
+        width: 100px;
+        height: 100px;
+        margin: 0 20px;
+        position: absolute;
+        right: -185px;
+        bottom: -10px;
+      }
+      section .pict-name p {
+        margin: 0 auto;
+        display: block; 
+        margin: -1em 0 0 0; 
+        float: right; 
+        font-size: 0.6em;
+        position: absolute;
+        right: -165px;
+        bottom: -40px;
+      }
+       .reveal h2 {
+        padding-bottom: 20px;
+      }
+      ul .list-small {
+        font-size: 27px;
+      }
+        .row:after{
+            display: block;
+            clear: both;
+        }
+        .column{
+            float:left;
+            width: 50%;
+            padding: auto;
+            height: auto;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section >
+          <br><br><br><br>
+          <h1>QUALITY MATTERS !!!</h1>
+          <br>
+          <p><b>By OpenFOSS</b></p>
+        </section>
+
+        <section data-background="#d11242">
+          <h2>Team Members</h2>
+          <table>
+            <tr>
+             <td><div><img width="150" height="150" data-src="lib/img/gideon.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Gideon Nyamachere</p></div></td>
+              <td><div><img width="150" height="150" data-src="lib/img/jonathan.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Jonathan Grant</p></div></td>
+              <br/>
+            </tr>
+            <tr>
+              <td><div><img width="150" height="150" data-src="lib/img/said.png" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Said Robley</p></div></td>
+              <td><div><img width="150" height="150" data-src="lib/img/tell.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Tell Hause</p></div></td>
+
+            </tr>
+          </table>
+        </section>
+
+        <section>
+            <h2>HOW DID WE COME UP WITH QUALITY METRICS</h2>
+            <ul>
+                <li class="fragment" style="transition-duration: 1.5s">Reviewing the artifacts created:</li>
+                <ul>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">OpenMRS</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Team work</li>
+                </ul>
+                <br>
+                <li class="fragment" style="transition-duration: 1.5s">Ensuring we made artifacts that are:</li>
+                <ul>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Tangible</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Can stand-alone</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Stakeholder can <u>buy into</u></li>
+                  </ul>
+                </br>
+                <li class="fragment" style="transition-duration: 1.5s">Which metrics do we use:</li>
+                <ul>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Functional Metrics</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Non-Functional Metrics</li>
+                </ul>
+                </li>
+            </ul>
+            <div class="pict-name">
+                  <img data-src="lib/img/gideon.jpg">
+                  <p>Gideon Nyamachere</p>
+            </div>
+        </section>
+
+        <section data-background="#00447c">
+          <h2>HOW WE TURNED QUALITY INTO A COMPARABLE METRIC</h2>
+          <ul>
+              <div class="row">
+                  <div class="column">
+                      <li class="fragment" style="transition-duration: 1.5s">Creating a flexible scale for the metrics
+                          <ul>
+                              <li class="fragment list-small" style="transition-duration: 1.5s">Scalar</li>
+                              <li class="fragment list-small" style="transition-duration: 1.5s">Binary</li>
+                          </ul>
+                      </li>
+                      <br>
+                      <li class="fragment" style="transition-duration: 1.5s">Easily Comparable Metrics</li>
+                      <ul>
+                          <li class="fragment list-small" style="transition-duration: 1.5s">Can compare apples to oranges</li>
+                          <li class="fragment list-small" style="transition-duration: 1.5s">Can perform analysis easily</li>
+                      </ul>
+                      </li>
+                  </div>
+                  <div class="column">
+                      <img data-src="lib/img/qualityQuestionnaire.png" style="float: right; border: 0px;" class="fragment">
+                  </div>
+              </div>
+          </ul>
+          <div class="pict-name">
+              <img data-src="lib/img/tell.jpg">
+              <p>Tell Hause</p>
+          </div>
+        </section>
+
+        <section>
+            <h2>MAKING A QUALITY QUESTIONNAIRE</h2>
+            <ul>
+                <div class="row">
+                    <div class="column" style="width: 60%">
+                        <li class="fragment" style="transition-duration: 1.5s">We wanted the questionnaire to be automated</li>
+                        <li class="fragment" style="transition-duration: 1.5s">Needed to be general enough for many types of artifacts</li>
+                        <li class="fragment" style="transition-duration: 1.5s">We desired it to be easily distributable</li>
+                        <li class="fragment" style="transition-duration: 1.5s">We wanted the questionnaire to be easily adopted by stakeholders</li>
+                        </li>
+                    </div>
+                    <div class="column" style="width: 40%">
+                        <img data-src="lib/img/kiss.png" style="float: right; border: 0px;" class="fragment">
+                        <p style="font-size: 0.5em" class="fragment"> https://www.shutterstock.com/g/nationkp </p>
+                    </div>
+                </div>
+            </ul>
+          <div class="pict-name">
+              <img data-src="lib/img/tell.jpg">
+              <p>Tell Hause</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>LESSONS LEARNT</h2>
+          <ul>
+            <li class="fragment" style="transition-duration: 1.5s">Respect the time respondents take:</li>
+              <ul>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Tried it with assessing our second presentation</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Time to launch, fill in and return: approx. 5 mins</li>
+              </ul>
+              </li>
+              <br>
+              <li class="fragment" style="transition-duration: 1.5s"> Make the Task Repeatable:</li>
+                <ul>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Use a template</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Automate it</li>
+                </ul>
+              </li>
+              <br>
+              <li class="fragment" style="transition-duration: 1.5s"> Keep It Simple Stupid:</li>
+              <ul>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Keep the questionnaire short</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Use only meaningful questions</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Make the output easy to aggregate</li>
+              </ul>
+              </li>
+          </ul>
+          <div class="pict-name">
+
+              <img data-src="lib/img/said.png">
+              <p>Said Robley</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: false,
+        history: true,
+        keyboard: true,
+        progress: true,
+        center: true,
+        transition: 'fade',
+        dependencies: [
+          // https://github.com/eligrey/classList.js/
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>
