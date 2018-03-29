@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <style>
+      section {
+        height: 655px;
+        position: relative;
+      }
+      section .pict-name img {
+        border-radius: 50%; 
+        width: 100px;
+        height: 100px;
+        margin: 0 20px;
+        position: absolute;
+        right: -185px;
+        bottom: -10px;
+      }
+      section .pict-name p {
+        margin: 0 auto;
+        display: block; 
+        margin: -1em 0 0 0; 
+        float: right; 
+        font-size: 0.6em;
+        position: absolute;
+        right: -165px;
+        bottom: -40px;
+      }
+       .reveal h2 {
+        padding-bottom: 20px;
+      }
+      ul .list-small {
+        font-size: 27px;
+      }
+        .row:after{
+            display: block;
+            clear: both;
+        }
+        .column{
+            float:left;
+            width: 50%;
+            padding: auto;
+            height: auto;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown>
+            <textarea data-template>
+            ## Markdown Example
+            * List
+             * sub-items
+
+            ![asdf](https://media.giphy.com/media/l3fQ7hK1hpqujCXbG/source.gif)
+
+            </textarea>
+        </section>
+
+        <section data-background="#00447c">
+          <h2>Effects of Siloing</h2>
+            <div class="row">
+              <div class="column">
+                <ul>
+                  <li class="fragment" style="font-size: 70%; transition-duration: 1.5s">OpenFOSS’ first pull request.</li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul>
+                  <li class="fragment" style="font-size: 70%; transition-duration: 1.5s">Theory of Constraints</li>
+                  <ul>
+                    <li class="fragment" style="font-size: 70%; transition-duration: 1.5s">“The chain is only as strong as the weakest link.”</li>
+                    <li class="fragment" style="font-size: 70%; transition-duration: 1.5s">The sooner you start, the sooner you learn.</li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+            <div class="row" style='margin-top: 6em'>
+              <div class="column">
+                <ul>
+                  <li class="fragment" style="font-size: 70%; transition-duration: 1.5s">Is your team’s documentation known and clearly visible to everyone?</li>
+                </ul>
+              </div>
+              <video data-autoplay class="fragment current-visible" src="lib/vid/bad-docs.mov" style="margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0;"></video>
+              <div class="column">
+                <ul>
+                  <li class="fragment" style="font-size: 70%; transition-duration: 1.5s">Share your insights when working alone.</li>
+               </ul>
+              </div>
+            </div>
+            <div class="row" style='margin-top: 9em'>
+              <div class="column">
+                <ul>
+                  <li class="fragment" style="font-size: 70%; transition-duration: 1.5s">Does your process enable your team to get work done?</li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul>
+                  <li class="fragment" style="font-size: 70%; transition-duration: 1.5s">Removing our organization from future pull requests.</li>
+                </ul>
+              </div>
+            </div>
+          <div class="pict-name">
+            <img data-src="lib/img/tell.jpg">
+            <p>Tell Hause</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: false,
+        history: true,
+        keyboard: true,
+        progress: true,
+        center: true,
+        transition: 'fade',
+        dependencies: [
+          // https://github.com/eligrey/classList.js/
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        ]
+      });
+    </script>
+  </body>
+</html>
