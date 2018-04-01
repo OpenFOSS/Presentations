@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <style>
+      section {
+        height: 655px;
+        position: relative;
+      }
+      section .pict-name img {
+        border-radius: 50%; 
+        width: 100px;
+        height: 100px;
+        margin: 0 20px;
+        position: absolute;
+        right: -185px;
+        bottom: -10px;
+      }
+      section .pict-name p {
+        margin: 0 auto;
+        display: block; 
+        margin: -1em 0 0 0; 
+        float: right; 
+        font-size: 0.6em;
+        position: absolute;
+        right: -165px;
+        bottom: -40px;
+      }
+       .reveal h2 {
+        padding-bottom: 20px;
+      }
+      ul .list-small {
+        font-size: 27px;
+      }
+        .row:after{
+            display: block;
+            clear: both;
+        }
+        .column{
+            float:left;
+            width: 50%;
+            padding: auto;
+            height: auto;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background="#d11242">
+            
+            <h1>Title<h2></h2>
+          <table>
+            <tr>
+             <td><div><img width="145" height="145" data-src="lib/img/gideon.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Gideon Nyamachere</p></div></td>
+              <td><div><img width="145" height="145" data-src="lib/img/jonathan.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Jonathan Grant</p></div></td>
+              <br/>
+            </tr>
+            <tr>
+              <td><div><img width="145" height="145" data-src="lib/img/said.png" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Said Robley</p></div></td>
+              <td><div><img width="145" height="145" data-src="lib/img/tell.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Tell Hause</p></div></td>
+            </tr>
+          </table>
+        </section>
+
+        <section data-background="#89cff8">
+          <h2>MAKE NO ASSUMPTIONS</h2>
+          <ul>
+            <li class="fragment" style="transition-duration: 1.5s">We assumed our tests were good:</li>
+              <ul>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Until we saw this</li>
+                <!--  <img class="fragment list-small" style="transition-duration: 1.5s; height: 80px;" data-src="lib/img/test1.png"><br/> -->
+              <!--    <li class="fragment list-small" style="transition-duration: 1.5s">And this</li> -->
+              <img class="fragment current-visible" src="lib/img/test4.png" style="margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0"/>
+              <li class="fragment list-small" style="transition-duration: 1.5s">And this</li>
+
+              <video controls class="fragment current-visible" src="lib/img/test3.mov" id="myVideo" style="margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0"></video>
+
+                </ul>
+              </li>
+              <br>
+              <li class="fragment" style="transition-duration: 1.5s">How we solved these issues</li>
+                <ul>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">We tested the test
+                    <ul>
+                        <li class="fragment list-small" style="transition-duration: 1.5s">Is the test making the proper assertions?</li>
+                        <li class="fragment list-small" style="transition-duration: 1.5s">Is the test verifying the right thing?</li>
+                    </ul>
+                    
+
+                  </li>
+
+                  <li class="fragment list-small" style="transition-duration: 1.5s">We checked if the existing code works
+                    <ul>
+                        <li class="fragment list-small" style="transition-duration: 1.5s">Checked the code even when working on feature</li>
+
+                    </ul>
+
+                  </li>
+                </ul>
+              </li>
+            
+              
+          </ul>
+          <div class="pict-name">
+
+              <img data-src="lib/img/said.png">
+              <p>Said Robley</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: false,
+        history: true,
+        keyboard: true,
+        progress: true,
+        center: true,
+        transition: 'fade',
+        dependencies: [
+          // https://github.com/eligrey/classList.js/
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+      var vid = document.getElementById("myVideo");
+      vid.playbackRate = 2;
+    </script>
+  </body>
+</html>
