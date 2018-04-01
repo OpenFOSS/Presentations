@@ -37,16 +37,16 @@
       ul .list-small {
         font-size: 27px;
       }
-      .row:after{
-        display: block;
-        clear: both;
-      }
-      .column{
-        float:left;
-        width: 50%;
-        padding: auto;
-        height: auto;
-      }
+        .row:after{
+            display: block;
+            clear: both;
+        }
+        .column{
+            float:left;
+            width: 50%;
+            padding: auto;
+            height: auto;
+        }
     </style>
   </head>
 
@@ -54,7 +54,7 @@
     <div class="reveal">
       <div class="slides">
         <section data-background="#d11242">
-            <h3>OUR TAKEWAYS FROM CONTRIBUTING TO AN OPENSOURCE PROJECT</h3> by OpenFOSS<h4></h4>
+            <h1>QUALITY MATTERS !!!</h1> by OpenFOSS<h2></h2>
           <table>
             <tr>
              <td><div><img width="145" height="145" data-src="lib/img/gideon.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Gideon Nyamachere</p></div></td>
@@ -69,32 +69,27 @@
         </section>
 
         <section>
-            <h2>TOOLING</h2>
+            <h2>HOW DID WE COME UP WITH QUALITY METRICS</h2>
             <ul>
-                <li class="fragment" style="transition-duration: 1.5s">The right tools will multiply your productivity</li>
+                <li class="fragment" style="transition-duration: 1.5s">Reviewing the artifacts created:</li>
+                <ul>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">OpenMRS</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Team work</li>
+                </ul>
                 <br>
-                <li class="fragment" style="transition-duration: 1.5s">Tools we used to run tests: </li>
-                <div class="row">
-                    <div class="column">
-                        <p class="fragment list-small" style="transition-duration: 1.5s"><b>mvn-test build</b></p>
-                        <ul>
-                            <li class="fragment list-small" style="transition-duration: 1.5s"><i>Unit testing takes time</i></li>
-                            <li class="fragment list-small" style="transition-duration: 1.5s"><i>Not easily accessible</i></li>
-                            <li class="fragment list-small" style="transition-duration: 1.5s"><i>Lots of configuration options to remember</i></li>
-                            <li class="fragment list-small" style="transition-duration: 1.5s"><i>Great for integration testing</i></li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <p class="fragment list-small" style="transition-duration: 1.5s"><b>IntelliJ IDEA</b></p>
-                        <ul>
-                            <li class="fragment list-small" style="transition-duration: 1.5s"><i>Focused output and tests</i></li>
-                            <li class="fragment list-small" style="transition-duration: 1.5s"><i>Assistance debugging: fixing bug issues</i></li>
-                            <li class="fragment list-small" style="transition-duration: 1.5s"><i>Obsolete classes/code easily identified</i></li>
-                            <li class="fragment list-small" style="transition-duration: 1.5s"><i>One glass pane</i></li>
-                        </ul>
-                    </div>
-                </div>
+                <li class="fragment" style="transition-duration: 1.5s">Ensuring we made artifacts that are:</li>
+                <ul>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Tangible</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Can stand-alone</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Stakeholder can <u>buy into</u></li>
+                  </ul>
                 </br>
+                <li class="fragment" style="transition-duration: 1.5s">Which metrics do we use:</li>
+                <ul>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Functional Metrics</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Non-Functional Metrics</li>
+                </ul>
+                </li>
             </ul>
             <div class="pict-name">
                   <img data-src="lib/img/gideon.jpg">
@@ -103,14 +98,42 @@
         </section>
 
         <section data-background="#00447c">
-          <h2>Example</h2>
-              <div class="fragment">
-                <img data-src="lib/img/mvn.png" style="float: left; border: 0px; width: 50em; height: 50em">
-                <img data-src="lib/img/Intellij.png" style="float: right; border: 0px; width: 50em; height: 50em">
+          <h2>HOW WE TURNED QUALITY INTO COMPARABLE METRICS</h2>
+          <ul>
+              <div class="row">
+                  <div class="column">
+                      <li class="fragment" style="transition-duration: 1.5s">Designing metric scales
+                          <ul>
+                              <li class="fragment list-small" style="transition-duration: 1.5s">Functional -&gt binary</li>
+                              <li class="fragment list-small" style="transition-duration: 1.5s">Non-Functional -&gt linear scale</li>
+                          </ul>
+                      </li>
+                      <br>
+                      <li class="fragment" style="transition-duration: 1.5s">Considering inference</li>
+                      <ul>
+                          <li class="fragment list-small" style="transition-duration: 1.5s">Compare apples to oranges</li>
+                          <li class="fragment list-small" style="transition-duration: 1.5s">Easy aggregation and analysis</li>
+                      </ul>
+                      </li>
+                      <br>
+                      <li class="fragment" style="transition-duration: 1.5s">Our implementation
+                          <ul>
+                              <li class="fragment list-small" style="transition-duration: 1.5s">Google Forms</li>
+                              <li class="fragment list-small" style="transition-duration: 1.5s">Variety of scales</li>
+                              <li class="fragment list-small" style="transition-duration: 1.5s">Easy to share</li>
+                              <li class="fragment list-small" style="transition-duration: 1.5s">Semi-automated analysis</li>
+                          </ul>
+                      </li>
+                  </div>
+                  <div class="column">
+                      <img data-src="lib/img/qualityQuestionnaire.png" style="float: right; border: 0px;" class="fragment">
+			               <p style="font-size: 0.5em" class="fragment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample responses</p>
+                  </div>
               </div>
+          </ul>
           <div class="pict-name">
-              <img data-src="lib/img/gideon.jpg">
-              <p>Gideon Nyamachere</p>
+              <img data-src="lib/img/jonathan.jpg">
+              <p>Jonathan Grant</p>
           </div>
         </section>
 
