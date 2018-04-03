@@ -53,22 +53,23 @@
   <body>
     <div class="reveal">
       <div class="slides">
-          <section data-background="#d11242">
-              <h4>OUR TAKEWAYS FROM CONTRIBUTING TO AN OPENSOURCE PROJECT</h4> <h4>by OpenFOSS</h4>
-            <table>
-              <tr>
-               <td><div><img width="145" height="145" data-src="lib/img/gideon.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Gideon Nyamachere</p></div></td>
-                <td><div><img width="145" height="145" data-src="lib/img/jonathan.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Jonathan Grant</p></div></td>
-                <br/>
-              </tr>
-              <tr>
-                <td><div><img width="145" height="145" data-src="lib/img/said.png" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Said Robley</p></div></td>
-                <td><div><img width="145" height="145" data-src="lib/img/tell.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Tell Hause</p></div></td>
-              </tr>
-            </table>
-          </section>
+        <section data-background="#d11242">
+          <h3>OUR TAKEWAYS FROM CONTRIBUTING TO AN OPENSOURCE PROJECT</h3>
+          <h4>by OpenFOSS</h4>
+          <table>
+            <tr>
+              <td><div><img width="145" height="145" data-src="lib/img/gideon.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Gideon Nyamachere</p></div></td>
+              <td><div><img width="145" height="145" data-src="lib/img/jonathan.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Jonathan Grant</p></div></td>
+              <br/>
+            </tr>
+            <tr>
+              <td><div><img width="145" height="145" data-src="lib/img/said.png" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Said Robley</p></div></td>
+              <td><div><img width="145" height="145" data-src="lib/img/tell.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Tell Hause</p></div></td>
+            </tr>
+          </table>
+        </section>
 
-       <section data-background="#9842f4">
+        <section data-background="#9842f4">
           <h2>KINKS IN THE WORKFLOW</h2>
             <div class="row">
               <div class="column">
@@ -78,8 +79,8 @@
               </div>
               <div class="column">
                 <ul>
-                    <li class="fragment" style="font-size: 70%; transition-duration: 1.5s">Doesn't work: research tickets, approve as team, claim</li>
-                	  <li class="fragment" style="font-size: 70%; transition-duration: 1.5s">Works better: claim now, evaluate later.</li>
+                  <li class="fragment" style="font-size: 70%; transition-duration: 1.5s">Doesn't work: research tickets, approve as team, claim</li>
+                  <li class="fragment" style="font-size: 70%; transition-duration: 1.5s">Works better: claim now, evaluate later.</li>
                 </ul>
               </div>
             </div>
@@ -92,67 +93,46 @@
               </div>
               <div class="column">
                 <ul>
-                    <li class="fragment" style="font-size: 70%; transition-duration: 1.5s">Doesn't work: just start working task</li>
-                  	<li class="fragment" style="font-size: 70%; transition-duration: 1.5s">Works better: Verify persistence of issue, then work task</li>
+                  <li class="fragment" style="font-size: 70%; transition-duration: 1.5s">Doesn't work: just start working task</li>
+                  <li class="fragment" style="font-size: 70%; transition-duration: 1.5s">Works better: Verify persistence of issue, then work task</li>
                 </ul>
               </div>
             </div>
-           
           <div class="pict-name">
             <img data-src="lib/img/jonathan.jpg">
             <p>Jonathan Grant</p>
           </div>
         </section>
 
-
         <section data-background="#89cff8">
-            <h2>MAKE NO ASSUMPTIONS</h2>
+          <h2>MAKE NO ASSUMPTIONS</h2>
+          <ul>
+            <li class="fragment" style="transition-duration: 1.5s"><b>We assumed our tests were good:</b></li>
             <ul>
-              <li class="fragment" style="transition-duration: 1.5s"><b>We assumed our tests were good:</b></li>
-                <ul>
-                    <li class="fragment list-small" style="transition-duration: 1.5s">Until we saw this</li>
-                  
-                <img class="fragment current-visible" src="lib/img/test4.png" style="margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0"/>
-                <li class="fragment list-small" style="transition-duration: 1.5s">And this</li>
-  
-                <video controls class="fragment current-visible" src="lib/img/test3.mov" id="myVideo" style="margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0"></video>
-  
-                  </ul>
-                </li>
-                <br>
-
-
-
-                <li class="fragment" style="transition-duration: 1.5s"><b>How we solved these issues</b></li>
-                  <ul>
-                    <li class="fragment list-small" style="transition-duration: 1.5s">We tested the test
-                      <ul>
-                          <li class="fragment list-small" style="transition-duration: 1.5s">Is the test making the proper assertions?</li>
-                          <li class="fragment list-small" style="transition-duration: 1.5s">Is the test verifying the right thing?</li>
-                      </ul>
-                      
-  
-                    </li>
-                    
-                    <li class="fragment list-small" style="transition-duration: 1.5s">We checked if the existing code works
-                      <ul>
-                          <li class="fragment list-small" style="transition-duration: 1.5s">Checked the code even when working on feature</li>
-  
-                      </ul>
-  
-                    </li>
-                  </ul>
-                </li>
-              
-                
+              <li class="fragment list-small" style="transition-duration: 1.5s">Until we saw this</li>
+              <img class="fragment current-visible" src="lib/img/test4.png" style="margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0"/>
+              <li class="fragment list-small" style="transition-duration: 1.5s">And this</li>
+              <video controls class="fragment current-visible" src="lib/img/test3.mov" id="myVideo" style="margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0"></video>
             </ul>
-            <div class="pict-name">
-  
-                <img data-src="lib/img/said.png">
-                <p>Said Robley</p>
-            </div>
-          </section>
-
+            <br>
+            <li class="fragment" style="transition-duration: 1.5s"><b>How we solved these issues</b></li>
+            <ul>
+              <li class="fragment list-small" style="transition-duration: 1.5s">We tested the test</li>
+              <ul>
+                <li class="fragment list-small" style="transition-duration: 1.5s">Is the test making the proper assertions?</li>
+                <li class="fragment list-small" style="transition-duration: 1.5s">Is the test verifying the right thing?</li>
+              </ul>
+              <li class="fragment list-small" style="transition-duration: 1.5s">We checked if the existing code works</li>
+              <ul>
+                <li class="fragment list-small" style="transition-duration: 1.5s">Checked the code even when working on feature</li>
+              </ul>
+            </ul>
+          </ul>
+          <div class="pict-name">
+            <img data-src="lib/img/said.png" style="border-color: #222;">
+            <p>Said Robley</p>
+          </div>
+        </section>
 
         <section data-background="#00447c">
           <h2>Effects of Siloing</h2>
@@ -178,11 +158,37 @@
                   <li class="fragment" style="font-size: 70%; transition-duration: 1.5s">Is your team’s documentation known and clearly visible to everyone?</li>
                 </ul>
               </div>
-              <video data-autoplay class="fragment current-visible" src="lib/vid/bad-docs.mov" style="margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0;"></video>
+            </div>
+          </section>
+          <section data-background-video="lib/vid/bad-docs.mov"></section>
+          <section data-background="#00447c">
+            <h2>Effects of Siloing</h2>
+            <div class="row">
+              <div class="column">
+                <ul>
+                  <li style="font-size: 70%; transition-duration: 1.5s">OpenFOSS’ first pull request.</li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul>
+                  <li style="font-size: 70%; transition-duration: 1.5s">Theory of Constraints</li>
+                  <ul>
+                    <li style="font-size: 70%; transition-duration: 1.5s">“The chain is only as strong as the weakest link.”</li>
+                    <li style="font-size: 70%; transition-duration: 1.5s">The sooner you start, the sooner you learn.</li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+            <div class="row" style='margin-top: 6em'>
+              <div class="column">
+                <ul>
+                  <li style="font-size: 70%; transition-duration: 1.5s">Is your team’s documentation known and clearly visible to everyone?</li>
+                </ul>
+              </div>
               <div class="column">
                 <ul>
                   <li class="fragment" style="font-size: 70%; transition-duration: 1.5s">Share your insights when working alone.</li>
-               </ul>
+                </ul>
               </div>
             </div>
             <div class="row" style='margin-top: 9em'>
@@ -206,63 +212,55 @@
         <section>
           <h2>TOOLING</h2>
           <ul>
-              <li class="fragment" style="transition-duration: 1.5s">The right tools will multiply your productivity</li>
-              <br>
-              <li class="fragment" style="transition-duration: 1.5s">Tools we used to run tests: </li>
-              <div class="row">
-                  <div class="column">
-                      <p class="fragment list-small" style="transition-duration: 1.5s"><b>mvn-test build</b></p>
-                      <ul>
-                          <li class="fragment list-small" style="transition-duration: 1.5s"><i>Unit testing takes time</i></li>
-                          <li class="fragment list-small" style="transition-duration: 1.5s"><i>Not easily accessible</i></li>
-                          <li class="fragment list-small" style="transition-duration: 1.5s"><i>Lots of configuration options to remember</i></li>
-                          <li class="fragment list-small" style="transition-duration: 1.5s"><i>Great for integration testing</i></li>
-                      </ul>
-                  </div>
-                  <div class="column">
-                      <p class="fragment list-small" style="transition-duration: 1.5s"><b>IntelliJ IDEA</b></p>
-                      <ul>
-                          <li class="fragment list-small" style="transition-duration: 1.5s"><i>Focused output and tests</i></li>
-                          <li class="fragment list-small" style="transition-duration: 1.5s"><i>Assistance debugging: fixing bug issues</i></li>
-                          <li class="fragment list-small" style="transition-duration: 1.5s"><i>Obsolete classes/code easily identified</i></li>
-                          <li class="fragment list-small" style="transition-duration: 1.5s"><i>One glass pane</i></li>
-                      </ul>
-                  </div>
+            <li class="fragment" style="transition-duration: 1.5s">The right tools will multiply your productivity</li>
+            <br>
+            <li class="fragment" style="transition-duration: 1.5s">Tools we used to run tests: </li>
+            <div class="row">
+              <div class="column">
+                <p class="fragment list-small" style="transition-duration: 1.5s"><b>mvn-test build</b></p>
+                <ul>
+                  <li class="fragment list-small" style="transition-duration: 1.5s"><i>Unit testing takes time</i></li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s"><i>Not easily accessible</i></li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s"><i>Lots of configuration options to remember</i></li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s"><i>Great for integration testing</i></li>
+                </ul>
               </div>
-              </br>
+              <div class="column">
+                <p class="fragment list-small" style="transition-duration: 1.5s"><b>IntelliJ IDEA</b></p>
+                <ul>
+                  <li class="fragment list-small" style="transition-duration: 1.5s"><i>Focused output and tests</i></li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s"><i>Assistance debugging: fixing bug issues</i></li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s"><i>Obsolete classes/code easily identified</i></li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s"><i>One glass pane</i></li>
+                </ul>
+              </div>
+            </div>
+            </br>
           </ul>
           <div class="pict-name">
-                <img data-src="lib/img/gideon.jpg">
-                <p>Gideon Nyamachere</p>
+            <img data-src="lib/img/gideon.jpg">
+            <p>Gideon Nyamachere</p>
           </div>
       </section>
 
       <section data-background="#00447c">
         <h2>Example</h2>
-            <div class="fragment">
-              <img data-src="lib/img/mvn.png" style="float: left; border: 0px; width: 50em; height: 50em">
-              <img data-src="lib/img/Intellij.png" style="float: right; border: 0px; width: 50em; height: 50em">
-            </div>
+        <div>
+          <img data-src="lib/img/mvn.png" style="position: absolute; left: 0px; width: 60%; border: 0px;">
+          <img data-src="lib/img/Intellij.png" style="position: absolute; right: 0px; bottom: 0px; width: 70%; border: 0px;">
+        </div>
         <div class="pict-name">
-            <img data-src="lib/img/gideon.jpg">
-            <p>Gideon Nyamachere</p>
+          <img data-src="lib/img/gideon.jpg">
+          <p>Gideon Nyamachere</p>
         </div>
       </section>
-
-
       </div>
     </div>
-
-
-
-
-
 
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
 
     <script>
-      // More info https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
         controls: false,
         history: true,
@@ -271,7 +269,6 @@
         center: true,
         transition: 'fade',
         dependencies: [
-          // https://github.com/eligrey/classList.js/
           { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
           { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
         ]
