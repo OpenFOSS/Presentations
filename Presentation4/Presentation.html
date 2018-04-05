@@ -283,5 +283,20 @@
 
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
+
+    <script>
+      Reveal.initialize({
+        controls: false,
+        history: true,
+        keyboard: true,
+        progress: true,
+        center: true,
+        transition: 'fade',
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
   </body>
 </html>
