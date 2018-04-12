@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <style>
+      section {
+        height: 655px;
+        position: relative;
+      }
+      section .pict-name img {
+        border-radius: 50%; 
+        width: 100px;
+        height: 100px;
+        margin: 0 20px;
+        position: absolute;
+        right: -185px;
+        bottom: -10px;
+      }
+      section .pict-name p {
+        margin: 0 auto;
+        display: block; 
+        margin: -1em 0 0 0; 
+        float: right; 
+        font-size: 0.6em;
+        position: absolute;
+        right: -165px;
+        bottom: -40px;
+      }
+       .reveal h2 {
+        padding-bottom: 20px;
+      }
+      ul .list-small {
+        font-size: 27px;
+      }
+        .row:after{
+            display: block;
+            clear: both;
+        }
+        .column{
+            float:left;
+            width: 50%;
+            padding: auto;
+            height: auto;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background="#d11242">
+          <h3>THE OPENFOSS PRODUCT: CONTRIBUTIONS TO OPENMRS</h3>
+          <h4>Creating value for our stakeholders</h4>
+          <table>
+            <tr>
+              <td><div><img width="145" height="145" data-src="lib/img/gideon.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Gideon Nyamachere</p></div></td>
+              <td><div><img width="145" height="145" data-src="lib/img/jonathan.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Jonathan Grant</p></div></td>
+              <br/>
+            </tr>
+            <tr>
+              <td><div><img width="145" height="145" data-src="lib/img/said.png" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Said Robley</p></div></td>
+              <td><div><img width="145" height="145" data-src="lib/img/tell.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Tell Hause</p></div></td>
+            </tr>
+          </table>
+        </section>
+
+        <section data-background="#00447c">
+          <h2>Improve Functionality: Cohort.intersect(a: Cohort, b: Cohort): Cohort</h2>
+            <div>
+			 <ul>
+				<li class="fragment" style="transition-duration: 1.5s">Original implementation</li>
+                <ul>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Incorect behavior</li>
+                  <li class="fragment list-small" style="transition-duration: 1.5s">Size of result inconsistent</li>
+				  <li class="fragment list-small" style="transition-duration: 1.5s">Insufficient tests</li>
+				</ul>
+				<br>
+				<li class="fragment" style="transition-duration: 1.5s">Acceptance criterion:</li>
+					<p class="fragment list-small" style="transition-duration: 1.5s">Cohort.intersect, when invoked with {Patient 123, startDate Jan 1} and {Patient 123, startDate Feb 15},
+should produce either a cohort with {Patient 123, startDate Feb 15}, or else a cohort with {Patient 123, startDate null}.</p>
+					
+			</ul>
+            </div>
+			
+          <div class="pict-name">
+            <img data-src="lib/img/jonathan.jpg">
+            <p>Jonathan Grant</p>
+          </div>
+        </section>
+		  
+		  <section data-background="#00447c">
+		   <h2> Ipmrove Functionality: Cohort.intersect(a: Cohort, b: Cohort): Cohort</h2>
+				<img data-src="lib/img/CohortIntersect.jpg" style="left: 0px; border: 0px;">
+		  </section>
+
+
+    	<section data-background="#d11242">
+        <h2>CONCLUSION:(?)</h2>
+        <div style="text-align:center;vertical-align:middle;font-size=80%;margin-top:6em" >
+          <p><b>Some manner of conclusion</b></p>
+        </div>
+      </section>
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      Reveal.initialize({
+        controls: false,
+        history: true,
+        keyboard: true,
+        progress: true,
+        center: true,
+        transition: 'fade',
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>
