@@ -69,6 +69,35 @@
           </table>
         </section>
 
+        <section data-markdown>
+          <textarea data-template>
+            <div class="pict-name">
+              <img data-src="lib/img/gideon.jpg">
+              <p>Gideon Nyamachere</p>
+            </div>
+            ## Which Value
+
+            * OpenFOSS Vision Statement <!-- .element: class="fragment" -->
+              * To practice software development methodologies in order to add value to OpenMRS and extend our existing knowledge of software engineering. <!-- .element: class="fragment" -->
+            * Definition of Value in this context <!-- .element: class="fragment" -->
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            <div class="pict-name">
+              <img data-src="lib/img/gideon.jpg">
+              <p>Gideon Nyamachere</p>
+            </div>
+            ## Which Value?
+
+            * OpenMRS Developers <!-- .element: class="fragment" -->
+              * "OpenMRS volunteers .. share knowledge and maintain this information, and we encourage you to help by fixing errors, updating knowledge, and adding comments or questions to pages." – OpenMRS Wiki <!-- .element: class="fragment" style="font-size:80%" -->
+              * "Don't hesistate to let us know where things can be improved." - OpenMRS Wiki <!-- .element: class="fragment" style="font-size:80%" -->
+            * OpenMRS Implementation/Users <!-- .element: class="fragment" -->
+              * A stable access to the OpenMRS platform <!-- .element: class="fragment" -->
+          </textarea>
+        </section>
+
         <section data-background="#00447c">
           <h2>Contributing Code Correctness</h2>
           <p class="fragment" style="transition-duration: 1.5s">What's the Point of Unit Tests Anyway?</p>
@@ -163,6 +192,7 @@
     <script src="js/reveal.js"></script>
 
     <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
         controls: false,
         history: true,
@@ -171,8 +201,11 @@
         center: true,
         transition: 'fade',
         dependencies: [
+          // https://github.com/eligrey/classList.js/
           { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
         ]
       });
     </script>
