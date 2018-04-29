@@ -13,7 +13,7 @@
         position: relative;
       }
       section .pict-name img {
-        border-radius: 50%; 
+        border-radius: 50%;
         width: 100px;
         height: 100px;
         margin: 0 20px;
@@ -31,31 +31,25 @@
         right: -165px;
         bottom: -40px;
       }
-       .reveal h2 {
-        padding-bottom: 20px;
+      .row:after{
+        display: block;
+        clear: both;
       }
-      ul .list-small {
-        font-size: 27px;
+      .column{
+        float:left;
+        width: 45%;
+        padding: auto;
+        height: auto;
       }
-        .row:after{
-            display: block;
-            clear: both;
-        }
-        .column{
-            float:left;
-            width: 45%;
-            padding: auto;
-            height: auto;
-        }
     </style>
   </head>
 
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-background="#d11242">
-          <h3>WE ARE OPENFOSS</h3>
-          <h4>A STORY OF SOFTWARE ENGINEERING</h4>
+        <section data-background="#00447c">
+          <h3>Becoming a Software Engineering Team</h3>
+          <h4>Putting Theory into Pracice</h4>
           <table>
             <tr>
               <td><div><img width="145" height="145" data-src="lib/img/gideon.jpg" style="margin: 0; border-radius: 50%; display: block; margin-right: auto; margin-left: auto"><br/><p style="text-align: center; margin: -1em 0 0 0;">Gideon Nyamachere</p></div></td>
@@ -69,251 +63,378 @@
           </table>
         </section>
 
-        <!-- Gideon Talking about core values. -->
-        <section data-markdown>
-          <textarea data-template>
-            <div class="pict-name">
-              <img data-src="lib/img/gideon.jpg">
-              <p>Gideon Nyamachere</p>
-            </div>
-            # Our Vision
-            <br/><br/>
-            OpenFoss' vision is to practice software development methodologies adding value to OpenMRS, in order to synthesize our existing knowledge of software engineering.
-          </textarea>
+        <section data-background="#d11242">
+          <br/><br/>
+          <b style="font-size: 2em">"In theory there is no difference between theory and practice; but in practice, there is."</b>
+          <p style="font-size: 0.5em; position: absolute; bottom: -10px; right: 0px">Jan L. A. van de Snepscheut</p>
         </section>
 
         <section data-markdown>
           <textarea data-template>
-            <div class="pict-name">
-              <img data-src="lib/img/gideon.jpg">
-              <p>Gideon Nyamachere</p>
-            </div>
-            ## What success means to us
+            ## From Humble Beginnings...
+            Most if not all of CS curriculum was individual work with toy projects.<!-- .element: class="fragment" -->
+
+            *Software Engineering Principles* <!-- .element: class="fragment" -->
             <br/>
-            * Actualizing our knowledge of Software Engineering <!-- .element: class="fragment" -->
-            * Providing artifacts of accomplishments throughout the semester<!-- .element: class="fragment" -->
-            * Work as a team and still like each other at the end of the semester<!-- .element: class="fragment" -->
+            * Much Larger Software Project<!-- .element: class="fragment" -->
+            * One Team all Semester<!-- .element: class="fragment" -->
+            * Documenting for a whole Semester<!-- .element: class="fragment" -->
+          </textarea>
+        </section>
+
+        <!-- We might be in over our heads -->
+        <section data-background="lib/img/height.jpg">
+          <br/><br/><br/><br/>
+          <h2 style="color: #fff; -webkit-text-stroke: 3px black;">We might be in over our heads...</h2>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## OpenFOSS' Vision:
+            <br/>
+            To practice software development methodologies in order to add value to OpenMRS and extend our existing knowledge of software engineering.
+          </textarea>
+        </section>
+
+        <section data-markdown data-background="#00447c">
+          <textarea data-template>
+            <h2>What is OpenMRS?</h2>
+            <img data-src="lib/img/openmrs.png" class="column" style="border: 0px; background: rgba(255, 255, 255, 0); box-shadow: 0 0 0 0">
+            <ul class="column" style="margin-left: 2em">
+              <li class="fragment">
+                An Open Source Medical Record Application
+              </li>
+              <li class="fragment">
+                Mitigate preventable deaths from lack of information
+              </li>
+              <li class="fragment">
+                Focused on serving developing countries
+              </li>
+            </ul>
           </textarea>
         </section>
 
         <section data-markdown>
-            <textarea data-template>
-              <div class="pict-name">
-                <img data-src="lib/img/gideon.jpg">
-                <p>Gideon Nyamachere</p>
-              </div>
-              ## Adding Value to a Product
-              <br/>
-              A product's community will express what they value. <!-- .element: class="fragment" -->
-              * Value is not always features. <!-- .element: class="fragment" -->
-                * Updating Documentation <!-- .element: class="fragment" -->
-                * Backlog Grooming <!-- .element: class="fragment" -->
-                * Fixing existing work <!-- .element: class="fragment" -->
-                * Contributing tests <!-- .element: class="fragment" -->
-            </textarea>
-          </section>
+          <textarea data-template>
+            ## What does success look like for us?
+            <br/>
+            * Actualizing our knowledge of software development.<!-- .element: class="fragment" -->
+            * Providing artifacts of accomplishments throughout the semester, which demonstrates improved knowledge.<!-- .element: class="fragment" -->
+            * Working as a cohesive team and still like eachother by the end of the project.<!-- .element: class="fragment" -->
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            <br/><br/> 
+            # OpenFOSS' process
+          </textarea>
+        </section>
+
+        <section>
+          <h2>Scrum Agile</h2>
+
+          <div class="row">
+            <div class="column">
+              <p style="color: rgba(0, 0, 0, 0)">Individuals and interactions</p>
+            </div>
+            <div class="column" style="width: 10%;">
+              <br/><b>&gt</b>
+            </div>
+            <div class="column">
+              <p>processes and<br/>tools</p>
+            </div>
+          </div>
+        </section>
+
+        <section data-background="lib/img/Build-Environ-1.png"></section>
+        <section data-background="lib/img/Build-Environ-2.png"></section>
+
+        <section>
+          <h2>Scrum Agile</h2>
+          <div class="row">
+            <div class="column">
+              <p class="fragment" data-fragment-index="0">Individuals and interactions</p>
+            </div>
+            <div class="column" style="width: 10%;">
+              <br/><b>&gt</b>
+            </div>
+            <div class="column">
+              <p>Processes and<br/>tools</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <p style="color: rgba(0,0,0,0)">Working<br/>software</p>
+            </div>
+            <div class="column" style="width: 10%;">
+              <br/><b class="fragment" data-fragment-index="2">&gt</b>
+            </div>
+            <div class="column">
+              <p class="fragment" data-fragment-index="2">Comprehensive documentation</p>
+            </div>
+          </div>
+        </section>
+
+        <section data-background="lib/img/CA-Agile.png"></section>
+
+        <section>
+          <h2>Scrum Agile</h2>
+
+          <div class="row">
+            <div class="column">
+              <p>Individuals and interactions</p>
+            </div>
+            <div class="column" style="width: 10%;">
+              <br/><b>&gt</b>
+            </div>
+            <div class="column">
+              <p>Processes and<br/>tools</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <p class="fragment" data-fragment-index="1">Working<br/>software</p>
+            </div>
+            <div class="column" style="width: 10%;">
+              <br/><b>&gt</b>
+            </div>
+            <div class="column">
+              <p>Comprehensive documentation</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <p class="fragment" data-fragment-index="2">Customer collaboration</p>
+            </div>
+            <!--TODO-->
+            <div class="column" style="width: 10%; margin-top: 0.2em">
+              <b class="fragment" data-fragment-index="2">&gt</b>
+            </div>
+            <div class="column">
+              <p style="color: rgba(0,0,0,0)">Contract negotiation</p>
+            </div>
+          </div>
+        </section>
+
+        <section data-background="lib/img/Cust-Colab-1.png"></section>
+        <section data-background="lib/img/Cust-Colab-2.png"></section>
+
+        <section>
+          <h2>Scrum Agile</h2>
+
+          <div class="row">
+            <div class="column">
+              <p>Individuals and interactions</p>
+            </div>
+            <div class="column" style="width: 10%;">
+              <br/><b>&gt</b>
+            </div>
+            <div class="column">
+              <p>processes and<br/>tools</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <p>Working<br/>software</p>
+            </div>
+            <div class="column" style="width: 10%;">
+              <br/><b>&gt</b>
+            </div>
+            <div class="column">
+              <p>comprehensive documentation</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <p>Customer collaboration</p>
+            </div>
+            <div class="column" style="width: 10%; margin-top: 0.2em">
+              <b>&gt</b>
+            </div>
+            <div class="column">
+              <p class="fragment">contract negotiation
+            </div>
+          </div>
+          <div class="row fragment">
+            <div class="column">
+              <p>Responding to change
+            </div>
+            <div class="column" style="width: 10%; margin-top: 0.5em">
+              <b>&gt</b>
+            </div>
+            <div class="column">
+              <p>following a plan</p>
+            </div>
+          </div>
+        </section>
+
+        <section data-markdown data-background="#d11242">
+          <textarea data-template>
+            ## Realizing we needed to adapt.
+            <br/>
+            <div class="column">
+              <ul>
+                <li class="fragment" data-fragment-index="1">
+                  Minimal Progress
+                </li><br/>
+                <li class="fragment" data-fragment-index="3">
+                  Unbalanced Team Work
+                </li>
+                <li class="fragment" data-fragment-index="5">
+                  Drowning in Documentation
+                </li>
+                <li class="fragment" data-fragment-index="7">
+                  Discord within team
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul>
+                <li class="fragment" data-fragment-index="2">
+                  1 contribution in 55 days
+                </li>
+                <li class="fragment" data-fragment-index="4">
+                  Discomfort with development
+                </li>
+                <li class="fragment" data-fragment-index="6">
+                  7 unworkable tickets created
+                </li>
+                <li class="fragment" data-fragment-index="8">
+                  Long and stressful meetings
+                </li>
+              </ul>
+            </div>
+          </textarea>
+        </section>
+
+        <section data-markdown data-background="#00447c">
+          <textarea data-template>
+            ## Turn that Ship around!
+            <br/>
+            Once we noticed this, we took action! <!-- .element: class="fragment" -->
+
+            * Spent time building trust outside of the project <!-- .element: class="fragment" -->
+            * Addressed team dysfunctions with help from Lencioni <!-- .element: class="fragment" -->
+            * Stressed individual accountability <!-- .element: class="fragment" -->
+            * Began programming in pairs on a schedule <!-- .element: class="fragment" -->
+            * Focused priority on what our stakeholders value <!-- .element: class="fragment" -->
+          </textarea>
+        </section>
 
         <!-- Tell Talking about tests -->
         <section data-background="#00447c">
           <h2>Contributing Code Correctness</h2>
           <p class="fragment" style="transition-duration: 1.5s">What's the Point of Unit Tests Anyway?</p>
           <p class="fragment" style="transition-duration: 1.5s">Ensuring the current code is behaving as intended.</p>
-          <div class="pict-name">
-            <img data-src="lib/img/tell.jpg">
-            <p>Tell Hause</p>
-          </div>
         </section>
         <section>
           <h2>The Code to Test</h2>
           <img data-src="lib/img/setValBool-1.png" style="border: 0px; box-shadow: 0 0 0;">
-          <div class="pict-name">
-            <img data-src="lib/img/tell.jpg">
-            <p>Tell Hause</p>
-          </div>
         </section>
         <section data-transition="none">
           <h2>The Code to Test</h2>
           <img data-src="lib/img/setValBool-2.png" style="background: rgba(255, 255, 255, 0); border: 0px; box-shadow: 0 0 0;">
-          <div class="pict-name">
-            <img data-src="lib/img/tell.jpg">
-            <p>Tell Hause</p>
-          </div>
         </section>
         <section data-transition="none">
           <h2>The Code to Test</h2>
           <img data-src="lib/img/setValBool-3.png" style="background: rgba(255, 255, 255, 0); border: 0px; box-shadow: 0 0 0;">
-          <div class="pict-name">
-            <img data-src="lib/img/tell.jpg">
-            <p>Tell Hause</p>
-          </div>
         </section>
         <section data-transition="none">
-          <h2>The Existing Tests</h2>
+          <h2>The Existing Test</h2><br/>
           <img data-src="lib/img/setValBool-4.png" style="background: rgba(255, 255, 255, 0); border: 0px; box-shadow: 0 0 0;">
-          <div class="pict-name">
-            <img data-src="lib/img/tell.jpg">
-            <p>Tell Hause</p>
-          </div>
         </section>
         <section data-transition="none">
-          <h2>The Existing Test</h2>
-          <img data-src="lib/img/setValBool-4.png" style="background: rgba(255, 255, 255, 0); border: 0px; box-shadow: 0 0 0;">
-          <div class="pict-name">
-            <img data-src="lib/img/tell.jpg">
-            <p>Tell Hause</p>
-          </div>
-        </section>
-        <section data-transition="none">
-          <h2>The Existing Test</h2>
+          <h2>The Existing Test</h2><br/>
           <img data-src="lib/img/setValBool-5.png" style="background: rgba(255, 255, 255, 0); border: 0px; box-shadow: 0 0 0;">
-          <div class="pict-name">
-            <img data-src="lib/img/tell.jpg">
-            <p>Tell Hause</p>
-          </div>
         </section>
         <section data-background="#00447c">
           <h2>Contributing Code Correctness</h2>
           <p style="transition-duration: 1.5s">What's the Point of Unit Tests Anyway?</p>
           <p style="transition-duration: 1.5s">Ensuring the current code is behaving as intended.</p>
           <p class="fragment" style="transition-duration: 1.5s">We can still do something to add value!</p>
-          <div class="pict-name">
-            <img data-src="lib/img/tell.jpg">
-            <p>Tell Hause</p>
-          </div>
         </section>
         <section data-transition="none">
           <img data-src="lib/img/setValBool-6.png" style="background: rgba(255, 255, 255, 0); border: 0px; box-shadow: 0 0 0;">
-          <div class="pict-name">
-            <img data-src="lib/img/tell.jpg">
-            <p>Tell Hause</p>
-          </div>
         </section>
         <section data-transition="none">
           <img data-src="lib/img/setValBool-7.png" style="background: rgba(255, 255, 255, 0); border: 0px; box-shadow: 0 0 0;">
-          <div class="pict-name">
-            <img data-src="lib/img/tell.jpg">
-            <p>Tell Hause</p>
-          </div>
         </section>
         <section data-transition="none">
           <img data-src="lib/img/setValBool-8.png" style="background: rgba(255, 255, 255, 0); border: 0px; box-shadow: 0 0 0;">
-          <div class="pict-name">
-            <img data-src="lib/img/tell.jpg">
-            <p>Tell Hause</p>
-          </div>
         </section>
 
         <!-- Said Presenting Filter Product -->
-        <section data-background="#00447c">
+        <section data-background="#d11242">
           <h2>Adding Functionality</h2>
           <ul>
-            <li class="fragment" >Example: getSetMembers() Filter</li>
+            <li class="fragment">Example: getSetMembers() Filter</li>
             <ul>
               <li class="fragment">Using Java SE 8 Streams!</li>
             </ul>
           </ul>
-          <div class="pict-name">
-            <img data-src="lib/img/said.png">
-            <p>Said Robley</p>
-          </div>
         </section>
+
         <section data-transition="none">
           <img data-src="lib/img/getSetMembers-1.png" style="background: rgba(255, 255, 255, 0); border: 0px; box-shadow: 0 0 0;">
-          <div class="pict-name">
-            <img data-src="lib/img/said.png">
-            <p>Said Robley</p>
-          </div>
         </section>
         <section data-transition="none">
           <img data-src="lib/img/getSetMembers-2.png" style="background: rgba(255, 255, 255, 0); border: 0px; box-shadow: 0 0 0;">
-          <div class="pict-name">
-            <img data-src="lib/img/said.png">
-            <p>Said Robley</p>
-          </div>
         </section>
-        <section data-background="#00447c">
+
+        <section data-background="#d11242">
           <h2>Adding Functionality</h2>
           <ul>
             <li>Example: getSetMembers() Filter</li>
             <ul>
               <li>Using Java SE 8 Streams!</li>
-              <img class="fragment" data-src="lib/img/CoCo.png" style="width: 170%; left: 0px; border: 0px;">
-              <li class="fragment"><b>48</b> loc added to tests.</li>
-              <li class="fragment"><b>18865</b> loc covered of <b>31988</b> total.</li>
+              <li>Ensure Correctness with Tests</li>
+              <img class="fragment" data-src="lib/img/CoCo-1.png" style="width: 170%; left: 0px; border: 0px;">
             </ul>
           </ul>
-          <div class="pict-name">
-            <img data-src="lib/img/said.png">
-            <p>Said Robley</p>
-          </div>
         </section>
-
-        <!-- Jon Concluding thoughts for Product Transition to Process -->
-          <!--
-          * Working software over comprehensive documentation
-          * Customer collaboration over contract negotiation
-          * Responding to change over following a plan
-          -->
-        <section>
-          <h2>OpenFOSS' Process</h2>
-
-          <b class="fragment" data-fragment-index="1" >We had to have a process for our team.</b>
-          <br/>
-          <b class="fragment" data-fragment-index="2" >Our team decided on Agile Scrum</b>
-          <div class="row">
-            <div class="column">
-              <p class="fragment" data-fragment-index="5">Individuals and interactions</p>
-            </div>
-            <div class="column" style="width: 10%;">
-              <p class="fragment" data-fragment-index="4">over</p>
-            </div>
-            <div class="column">
-              <p class="fragment" data-fragment-index="3">processes and<br/>tools</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column">
-              <p class="fragment" data-fragment-index="8">Working<br/>software</p>
-            </div>
-            <div class="column" style="width: 10%;">
-              <p class="fragment" data-fragment-index="7">over</p>
-            </div>
-            <div class="column">
-              <p class="fragment" data-fragment-index="6">comprehensive documentation</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column">
-              <p class="fragment" data-fragment-index="9">Customer collaboration</p>
-            </div>
-            <div class="column" style="width: 10%;">
-              <p class="fragment" data-fragment-index="10">over</p>
-            </div>
-            <div class="column">
-              <p class="fragment" data-fragment-index="11">contract negotiation
-            </div>
-          </div>
-          <div class="row">
-            <div class="column">
-              <p class="fragment" data-fragment-index="12">Responding to change
-            </div>
-            <div class="column" style="width: 10%;">
-              <p class="fragment" data-fragment-index="13">over</p>
-            </div>
-            <div class="column">
-              <p class="fragment" data-fragment-index="14">following a plan</p>
-            </div>
-          </div>
-          <div class="pict-name">
-            <img data-src="lib/img/jonathan.jpg">
-            <p>Jonathan Grant</p>
-          </div>
-        </section>
-
         <section data-background="#d11242">
-          <br/><br/><br/>
-          <b style="font-size: 130%">Consider this Concluded.</b>
+          <h2>Adding Functionality</h2>
+          <ul>
+            <li>Example: getSetMembers() Filter</li>
+            <ul>
+              <li>Using Java SE 8 Streams!</li>
+              <li>Ensure Correctness with Tests</li>
+              <img data-src="lib/img/CoCo-2.png" style="width: 170%; left: 0px; border: 0px;">
+            </ul>
+          </ul>
         </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## What Value did we add to OpenMRS?
+            <ul>
+              <li class="fragment">
+                Groomed several tickets in OpenMRS' backlog
+              </li>
+              <li class="fragment">
+                **4** Code Contributions
+              </liu>
+              <li class="fragment">
+                **244** updated lines of code
+              </li>
+              <li class="fragment">
+                **154** of which were tests **(~63%)**
+              </li>
+              <li class="fragment">
+                Increased test coverage **+0.045%**
+              </li>
+              <li class="fragment">
+                Found and reported a bug in the core api
+              </li>
+            </ul>
+          </textarea>
+        </section>
+
+        <section data-background="lib/img/summit.jpg">
+          <h2 style="color: #000;">OpenFOSS<br/>We Are Software Engineers</h2>
+        </section>
+
       </div>
     </div>
 
